@@ -1,0 +1,122 @@
+.faqs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faqs-container {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.faq-image-container {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4 ease-out;
+
+}
+
+.faq-image-container img {
+    width: 100%;
+    height: auto;
+    
+    transition: all .4s ease-in-out;
+
+}
+
+.faq-image-container:hover img {
+  
+    transform: scale3d(1.4, 1.4, 1.4);
+}
+
+.faqs-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+
+
+}
+
+.faq-element {
+    display: flex;
+
+}
+
+.faq-element h4 {
+   /*  flex: 1; */
+   width: 21%;
+    text-align: left;
+    max-width: 60%;
+    text-transform: uppercase;
+    font-size: 34px;
+    margin-block: 0;
+}
+.faq-element div {
+    flex: 4;
+    margin-left: 2rem;
+}
+
+.faq-q-a p {
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+.faq-q-a p:first-child {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(188, 188, 188, 0.544);
+}
+.faq-q-a p:first-child::after {
+    content: "+";
+    float: right;
+}
+.faq-q-a p:nth-child(2) span {
+ 
+    padding: 0rem;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
+    max-height: 100%;
+    transition: all 0.2s ease-out;
+    color: rgb(121, 121, 121);;
+    
+}
+
+ .open-faq-a {
+    height:150px !important;
+    max-height: 100%;
+    border: 1px solid rgba(188, 188, 188, 0.544);
+    display: flex;
+    padding-top: 1rem;
+    padding: 1rem !important;
+
+
+}
+
+.faq-q-a:hover p:nth-child(2) span {
+    height:max-content !important;
+    max-height: 100%;
+    border: 1px solid rgba(188, 188, 188, 0.544);
+    display: flex;
+    padding-top: 1rem;
+    padding: 1rem !important;
+    display: block;
+  }
+
+  @media (max-width: 1000px) {
+    .faq-element {
+        flex-direction: column;
+    }
+  }

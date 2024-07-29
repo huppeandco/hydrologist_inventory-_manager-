@@ -1,0 +1,134 @@
+.insight-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.insight-container h1 {
+    margin-bottom: 0;
+}
+.insight_date-authter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.insight_date-authter p, .insight_date-authter time {
+    margin-inline:  .2rem;
+}
+
+.insight_date-authter span {
+    margin-inline: 1rem;
+}
+.insight_date-authter img {
+    border-radius: 100%;
+}
+.insight_date-authter time {
+    color: rgb(168, 168, 168);
+}
+
+.insight-container > p {
+    max-width: 70%;
+    text-align: justify;
+    color: #858585;
+    margin-block: 2rem;
+    width: 100%;
+}
+
+.insight-quota {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center !important;
+    max-width: 60% !important;
+    color: black !important;
+    word-spacing: 3px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.insight-quota::before {
+    content: "“ ";
+}
+.insight-quota::after {
+    content: " ”";
+}
+
+.insight_second-title {
+    text-align: left;
+    color: black !important;
+    margin-block: 1rem !important;
+    margin-bottom: 0;
+    font-size: 20px;
+   
+}
+
+.insight-container > img {
+    margin-top: 2rem;
+}
+.insight-share {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+
+}
+
+.insight-share svg {
+    filter: grayscale();
+    margin-inline: .3rem;
+    
+}
+
+.insight_prev-next {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem ;
+    border-top: 1px solid #eee;
+}
+
+.insight_related-posts > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.insight_related-posts img {
+    max-width: 230px;
+    height: auto;
+}  
+.insight_related-posts h4, .insight_leave-replay h4 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.insight_prev-next   a {
+    color: black;
+    text-decoration: none !important;
+    }
+
+
+.insight_leave-replay {
+
+}
+
+
+@media (max-width: 1260px) {
+    .insight_related-posts > div {
+        flex-direction: column;
+
+
+    }
+    .insight_related-posts > div img {
+        max-width: 300px;
+    }
+    .insight_related-posts > div p {
+        max-width: 300px;
+    }
+    .insight_prev-next > div p:nth-child(2) {
+        display: none;
+    }
+}
+
+  

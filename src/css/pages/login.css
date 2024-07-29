@@ -1,0 +1,86 @@
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-register {
+    display: flex;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.account-login, .account-register  {
+width: 50%;
+display: flex;
+margin-block: 1rem;
+margin-inline: 1rem;
+flex-direction: column;
+}
+
+.account-register-wrapper, .account-login-wrapper {
+    padding: 1rem;
+    border: 1px solid rgba(170, 170, 170, 0.51);
+    display: flex;
+    flex-direction: column;
+}
+.account-register-wrapper label, .account-login-wrapper label{
+    color: rgba(170, 170, 170); 
+    width: 100%;
+    text-align: left;
+
+}
+.account-register-wrapper input, .account-login-wrapper input{
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    margin-block:  1rem;
+    width: 90%;
+    padding-inline: .7rem;
+    padding-block: 20px;
+    
+}
+.account-login-wrapper input[type="checkbox"] {
+    align-self: flex-start;
+    width: fit-content;
+
+}
+
+.account-login-wrapper p {
+    color: rgb(98, 98, 98); 
+    width: 100%;
+    text-align: left;
+}
+
+.account-register-wrapper p {
+    width: 100%;
+    text-align: left;
+    color: rgb(98, 98, 98); 
+}
+
+.mr-b {
+    margin-block: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1225px) {
+    .login-register {
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+    .account-login, .account-register {
+        width: 80%;
+    }
+}
+@media (max-width: 600px) {
+    .login-register {
+        width: 90%;
+    }
+    .account-login, .account-register {
+        width: 100%;
+    }
+}

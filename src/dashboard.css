@@ -1,0 +1,266 @@
+.dashboard-taps {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: fit-content;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 14px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    overflow-y: auto;
+    transition: all .2s linear;
+    background: white;
+  
+}
+.dashboard-taps.open svg {
+    filter: opacity(0.5) !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.dashboard-taps >div {
+    width: 100%;
+    text-align: left;
+    padding: 18px;
+    padding-left: 20px !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    box-sizing: border-box; 
+    cursor: pointer;
+    transition: all .2s linear;
+  
+}
+.dashboard-taps >div:hover {
+    background: rgba(206, 230, 255, 0.332);
+}
+
+.dashboard-taps >div  > svg {
+    flex: 1;
+}
+
+.dashboard-taps >div > div > h4 {
+    margin-bottom: 0px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-left: 6px;
+    font-size: 13px;
+
+}
+
+.dashboard-taps >div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(56, 56, 56, 0.05);
+    height: 1px;
+    width: 80%;
+    z-index: 2;
+
+}
+.dashboard-taps >div:hover::after {
+    width: 0;
+}
+
+.dashboard-taps >div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding-block: 12px;
+    
+
+}
+.dashboard-taps >div.open {
+    padding-bottom: 0px;
+}
+.dashboard-taps >div > div {
+    overflow: hidden;
+  transition: all .2s linear;   
+  flex-direction: row;
+   
+    flex: 5;
+    transition: all .2s linear;
+  
+   
+}
+.dashboard-taps >div > div > h4 {
+    display: none;
+}
+.dashboard-taps >div > div:first-child {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+.dashboard-taps >div > div:first-child > svg:last-child {
+    display: none;
+    margin-left: auto;
+   
+    transform: scale(.5);
+}
+.dashboard-taps.open >div > div:first-child > svg:last-child {
+    display: block;
+}
+.dashboard-taps >div > div:nth-child(2) {
+    padding-left: 42px;
+    
+      display: flex;
+      flex-direction: column;
+}
+
+.dashboard-taps.open >div > div {
+    display: flex;
+}
+.dashboard-taps.open >div > div h4 {
+    display: block;
+}
+.dashboard-taps >div > div > div {
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-taps >div > div:nth-child(2) {
+    width: 105%;
+    background: rgb(206 230 255 / 48%);
+    margin-left: -35px;
+    padding-bottom: 50px;
+    padding-left: 65px;
+    display: none ; 
+}
+.dashboard-taps >div > div:nth-child(2).closed {
+    height: 0px !important ;
+    display: none;
+    overflow: hidden;
+    transition: all .2s linear;
+  
+}
+.dashboard-taps >div > div:nth-child(2).open {
+  /*   height: 100px !important ; */
+    display: flex;
+  /*   overflow-y: auto;
+    transition: all .2s linear; */
+  
+}
+.dashboard-taps >div > div button {
+    margin-block: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.597);
+    position: relative;
+   
+    width: 60%;
+}
+.dashboard-taps >div > div button:last-child {
+    border-bottom: none;
+}
+.dashboard-taps >div > div button::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: -10px;
+    width: 65%;
+    height: 1px;
+    background: #a9a9a947;
+}
+.dashboard-taps >div > div:last-child button::after {
+    content: unset
+}
+.dashboard-taps >div > div button:hover {
+    color: rgb(0, 0, 0)
+}
+
+.dashboard-content {
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.dashboard-taps::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+    padding: 2px;
+}
+
+/* Style for the scrollbar track */
+.dashboard-taps::-webkit-scrollbar-track {
+    background-color: #d4d4d4; /* Set the background color of the scrollbar track */
+    border-radius: 10px; /* Apply curved edges */
+}
+
+/* Style for the scrollbar thumb */
+.dashboard-taps::-webkit-scrollbar-thumb {
+    background-color: rgb(176, 176, 176)7a7; /* Set the background color of the scrollbar thumb */
+    border-radius: 5px; /* Apply curved edges */
+}
+
+.rect-loader {
+    width: 98%; /* Set the width to 100% */
+    height: 150px; /* Set the height to 150px */
+    background-image: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); /* Set the background color of the loader */
+    background-size: 150% 100%;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+
+    animation: pulse2 1s infinite alternate; /* Add pulsating animation */
+}
+
+/* Animation keyframes for the pulsating effect */
+@keyframes pulse2 {
+    0% {
+        background-position: -200%;
+      }
+      100% {
+        background-position: 200%;
+      }
+}
+
+.display-orders {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    padding-top: 20px;
+
+}
+.display-order-item {
+    background: #fff;
+}
+.display-order-item > div {
+    flex: 1;
+    padding-left: 24px;
+    border-right: 1px solid #eee;
+}
+.m-menu {
+   
+    border: 1px solid #00000099;
+    position: absolute;
+    background: white;
+    width: 100px;
+    text-align: center;
+    left: 0px;
+    padding: 0px;
+
+}
+.m-menu p {
+    padding: 10px;
+    font-size: 12px;
+    margin: 0px;
+}
+.m-menu p:hover {
+   
+    font-size: 12px;
+    background: #eee;
+}

@@ -1,0 +1,62 @@
+.cart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0rem;;
+    flex-direction: column;
+}
+
+.cart > form {
+    margin-top: 3rem;
+    text-align: left;
+    width: 80%;
+
+}
+table {
+    border-collapse: collapse;
+}
+table th h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+table tbody p {
+    text-align: center;
+}
+table th {
+    background-color: #f5f5f5;
+    text-transform: uppercase;
+}
+th , tbody, tr, td {
+    vertical-align: middle;
+}
+
+.cart > form > table {  
+    text-align: left;
+    width: 100%;
+
+}
+
+.product-remove {
+    width: 40px;
+}
+.product-thumbnail {
+    width: 100px;
+}
+
+.cart th {
+    width: max-content;
+}
+.cart tbody img {
+    width: 50px;
+    height: auto;
+}
+.cart  > form  > table > tbody > tr {
+    margin-block: 1rem;
+   
+}
+
+.cart > form > table > tbody > tr > td {
+    vertical-align: middle;
+}

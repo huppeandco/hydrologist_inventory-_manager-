@@ -1,0 +1,342 @@
+.product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-items: center;
+  
+    justify-content: center;
+    
+}
+
+.prodcut-img-view {
+    flex: 1;
+    background-color: #eeeeee;
+    margin-inline: 2rem;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    position: relative;
+}
+
+.product_btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.prodcut-img-view img {
+    height: 500px;
+    width: auto;
+
+}
+
+.product-txt-view {
+    flex: 1;
+    width: 48.72%;
+    padding-left: 70px;
+
+}
+.delete-btn {
+    padding: .5rem;
+    background-color: red;
+    border: 1px solid black;
+    outline: none;
+ 
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.delete-btn:hover {
+    transform: scale(1.05) translateY(5px);
+    
+}
+ 
+
+.product-txt-view  input {
+    width: 100%;
+    padding: .5rem;
+    font-size: 21px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-block: 2rem;
+    margin-top: 0;
+
+}
+.product-txt-view textarea {
+    width: 100%;
+    padding: .5rem;
+}
+
+.product-txt-view p, .product-txt-view h4, .product-txt-view h1,.product-txt-view input  {
+    text-align: left;
+    line-height: 1.7rem;
+    color: #3b3b3b;
+}
+
+.product-txt-view >  p {
+    font-size: 15px;
+}
+
+.product-footer {
+    margin-top: 2rem;
+    display: flex;
+    padding-top: 1.5rem;
+    border-top: 1px solid #3b3b3b4e;
+}
+.product-footer > div:first-child {
+    flex: 1;
+}
+.product-footer >   div:nth-child(2) {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  
+}
+.product-footer >   div:nth-child(2)  > div {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.product-footer >   div:nth-child(2)  > div svg {
+    filter: grayscale();
+    margin-inline: 1rem;
+}
+
+
+.product-additional {
+    width: 80%;
+    margin-top: 3rem;
+
+}
+.additinal-taps {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.additinal-taps h2 {
+    margin-inline: 1rem;
+    color: #b4b4b4;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+
+.additinal-taps h2::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    top: 150%;
+    background-color: black;
+    width: 0%;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.additinal-taps h2:hover {
+    color: black;
+}
+.product-additional h2:hover::before {
+    width: 110%;
+}
+.additinal-taps h2::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    top: 150%;
+    background-color: black;
+    width: 0%;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.additinal-taps .active {
+    color: black;
+}
+
+.additinal-taps .active::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    top: 150%;
+    background-color: black;
+    width: 110%;
+}
+.addtional-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addtional-info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+
+    border-bottom: 1px solid #eee;
+}
+
+.addtional-info > div > h4
+ {
+    padding-block: 1rem ;
+    font-weight: lighter;
+    margin: 0;
+
+}
+
+.product-review {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-review p {
+    color: rgb(106, 106, 106);
+}
+
+.product-review > textarea {
+    width: 100%;
+    border: #f5f5f5 1px solid;
+    height: 48px;
+    line-height: 46px;
+    border-radius: 3px;
+    max-width: 100%;
+    background-color: #f5f5f5;
+  
+    padding: 0 20px;
+   min-height: 200px;
+   
+}
+
+.product-review > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.product-review > div > div {
+    flex: 1;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 120px;
+    max-width: 45%;
+    
+}
+.product-review > div > div > input {
+    flex: 1;
+    margin-block: 1.5rem;
+
+    border: #f5f5f5 1px solid;
+    height: 48px;
+    line-height: 46px;
+    border-radius: 3px;
+    max-width: 100%;
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 0 20px;
+    margin-right: 1rem;
+   
+
+}
+
+
+.related-products {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product h2 {
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+.related-products-container {
+    display: flex;
+    
+    align-items: flex-start;
+    
+}
+
+
+@media (max-width: 950px) {
+    .prodcut-img-view img {
+        height: 356px;
+        width: auto;
+    }
+    .product-txt-view {
+        padding-left: 2rem;
+    }
+    .related-products-container {
+        flex-direction: column;
+    }
+}
+@media (min-width: 850px) {
+    .p-sm-sc {
+        display: none;
+    } 
+
+}
+
+@media (max-width: 850px) {
+    .p-bg-sc {
+        display: none;
+    }
+    .p-sm-sc { 
+        display: block;
+    }
+    .product-review p, .product-review h4 {
+        width: 100%;
+        text-align: left;
+    }
+    .product-review > div  {
+        flex-direction: column;
+    }
+    .product-review > div > div {
+        max-width: unset;
+        width: 100%;
+    }
+    .product-review > div > div > input {
+        height: unset;
+    }
+}
+@media (max-width: 600px) {
+    .product_btn-container {
+        flex-direction: column;
+    }
+    .product_btn-container > button {
+        width: 100% !important;
+    }
+    .product_btn-container > .input-plus {
+        width: 100%;
+    }
+}
+@media (max-width: 500px)  {
+    .product-txt-view {
+        padding-left: 0;
+    }
+   
+}
+
+
+

@@ -1,0 +1,138 @@
+.upload-page  input , .upload-page textarea{
+    width: 85%;
+    margin: 10px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+.ok-btn {
+    padding: 4px;
+    padding-inline: 8px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 34px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    width: 70px;
+    background: rgb(0, 131, 255);
+    color: white;
+    outline: none;
+    border: none;
+
+}
+.content-tag {
+    padding: 8px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.196);
+    width: 82% !important;
+    align-self: center !important;
+    
+}
+.content-list {
+    margin-top: -8px;
+    position: relative;
+    width: 100%;
+    padding-inline: 10px;
+
+    
+}
+.dot-style {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-left: 3px;
+    border: 1px solid rgb(0, 131, 255);
+}
+.dot-style.fill {
+    background: rgb(0, 131, 255);
+}
+.content-list > div {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 100%;
+    height: 0;
+    background: white;
+    overflow: hidden;
+    width: 90%;
+    box-shadow: 1px 1px 18px 2px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    display: flex;
+   
+    flex-direction: column;
+}
+.content-list.active > div {
+    height: unset;
+    z-index: 10;
+}
+.upload-handle-btn {
+    background: rgb(0, 131, 255);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    font-size: 21px;
+    border-radius: 12px;
+    padding-inline: 16px;
+    cursor: pointer;
+    border: none;
+}
+.content-list > div > div:nth-last-child(2) {
+    border-bottom: 0px;
+   
+}
+
+.upload-page-loader {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upload-page h4 {
+    margin-bottom: 0;
+}
+.upload-product-cats button {
+    padding: 8px;
+    outline: none;
+    border: 1px solid black;
+    margin: .5rem;
+    cursor: pointer;
+    margin: 2px !important;
+
+}
+.upload-page input[type="text"], .upload-page textarea,  .upload-page input[type="number"]   {
+    width:unset;
+    margin: 10px;
+    padding: 8px;
+   
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+.upload-page input[type="file"]  {
+    border: none !important;
+}
+.upload-product-cats button:hover {
+    filter: invert();
+}
+
+.upload-product-cats button.active {
+    
+    filter: invert();
+}
+
+.cat-selector {
+    padding: 7px;
+    margin: 4px;
+    border-radius: 20px;
+}
+
+.cat-selector.active {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,21 @@
+.slider-container {
+  width: 300px;
+  height: 20px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.slider {
+
+  position: absolute;
+  cursor: pointer;
+  transform: translateX(0);
+  transition: transform 0.1s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-content {
+  color: white;
+}

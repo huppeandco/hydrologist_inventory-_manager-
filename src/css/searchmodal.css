@@ -1,0 +1,150 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
+.search-modal {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+
+.search-modal-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: start;
+    justify-content: center;
+    
+}
+
+.modal-close-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2000;
+}
+
+.modal-close-btn button {
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.search-modal-input {
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    height: 50px;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    align-items: flex-start;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+.search-modal-input .search-cats {
+    height: 20px;
+    flex: 1;
+    margin-block: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.search-modal-input input {
+    flex: 4;
+    outline: none;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: large;
+    padding: 1rem;
+}
+.search-modal svg {
+    flex: .5;
+    align-self: center;
+}
+.search-cats h4 {
+    text-transform: uppercase;
+padding-block: 1rem;
+    margin-top: 2rem;
+    color: rgb(82, 82, 82);
+  
+}
+.search-cats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.search-cats:hover h4 {
+    color: black;
+}
+.search-cats svg {
+    transition: all .2s linear;
+    margin-top: 8px;
+    margin-left: -16px;
+
+}
+.search-cats:hover svg {
+    transform: rotate(360deg);
+}
+.search-cats ul {
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    width: 150%;
+    opacity: 0;
+    transform: translateY(100px);
+    background-color: white;
+    overflow: hidden;
+    pointer-events: none;
+    transition: all .5s ease-in-out;
+    padding-left: 0;
+}
+
+.search-cats ul li {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 10%;
+    text-transform: uppercase;
+    padding-block: 1rem;
+    transition: all .1s linear;
+}
+.search-cats ul li:hover {
+    background-color: #0693e3;
+    color: white;
+}
+
+.search-cats:hover ul {
+    opacity: 1;
+    transform: translate(0px);
+    pointer-events: all;
+    
+}
+
+
+@keyframes loader-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

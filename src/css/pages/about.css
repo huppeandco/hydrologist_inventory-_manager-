@@ -1,0 +1,78 @@
+.about {
+    width: 100%;
+}
+
+.about-section {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 80vh;
+    z-index: 1;
+}
+
+.darken-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.about-section p, .about-section h2 {
+    width: 85%;
+    text-align: left;
+    color: white;
+    position: relative;
+    z-index: 3;
+    ;
+}
+.about-section h2 {
+    font-size: 40px;
+    font-family: 'Montserrat' !important;
+    font-weight: 100;
+}
+
+.about-section p {
+    text-align: justify;
+    line-height: 1.7rem;
+}
+
+.about-team {
+    width: 85%;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+}
+.about-team h4 {
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+.about-team > div {
+    display: flex;
+    flex-direction: column;
+}
+.about-team > div > img {
+    width: 350px;
+    position: relative;
+    z-index: 3;
+    height: auto;
+}
+.about-team > div > p  {
+    max-width: 350px;
+}
+
+@media (max-width: 1320px) {
+    .about-team {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-team > div > p { 
+        width: 100%;
+    }
+}

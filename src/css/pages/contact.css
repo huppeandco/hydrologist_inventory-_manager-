@@ -1,0 +1,99 @@
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 4rem;
+}
+.contact-action {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem
+}
+
+.send-message {
+    flex: 2;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-form {
+   
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form > div {
+    display: flex;
+    width: 100%;
+    
+}
+
+.contact-form > div > input {
+    flex: 1;
+    margin-block: 1.5rem;
+    margin-inline: 1rem;
+}
+
+.contact-form input , .contact-form textarea{
+    border: #f5f5f5 1px solid;
+    height: 48px;
+    line-height: 46px;
+    border-radius: 3px;
+    max-width: 100%;
+    background-color: #f5f5f5;;
+    width: 100%;
+    padding: 0 20px;
+    margin-inline: 1rem;
+    
+}
+
+.contact-form textarea {
+    width: 90%;
+    height: 20vh;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info h5, .contact-info p {
+    width: 100%;
+    text-align: left;
+}
+
+.contact > p {
+    max-width: 50%;
+}
+
+@media (max-width: 1024px) {
+    .contact-action  {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-form > div {
+        flex-direction: column;
+    }
+    .contact-form > div input {
+        padding: 1rem;
+        margin-left: 0;
+    }
+}
+
+
+

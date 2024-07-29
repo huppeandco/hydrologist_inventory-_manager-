@@ -1,0 +1,96 @@
+.lounge {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lounge-banner {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.lounge-banner h1 {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    font-size: 40px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    mix-blend-mode: luminosity;
+
+}
+
+.lounge-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+
+}
+.lounge-feature {
+    display: flex;
+    
+}
+.img-container {
+    width: 600px;
+    overflow: hidden;
+}
+.lounge-feature .lounge-feature-img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img-container img {
+    transition: all .5s ease-in-out;
+    width: 600px;
+}
+ .img-container:hover img {
+    transform: scale(1.3) rotate(5deg);
+}
+ .lounge-feature-txt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lounge-feature-txt p {
+    line-height: 1.8rem;
+    width: 70%;
+    text-align: justify;
+}
+.lounge-feature-txt h4 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.primary {
+
+}
+.secondary {
+    background-color: black;
+    color: white;
+  
+} 
+
+.secondary:hover {
+  border: 1px solid black;
+  color: black;
+    background-color: #01eed7;
+}

@@ -1,0 +1,42 @@
+.affiliate_page {
+    width: 100%;
+}
+
+.affiliate_page-container {
+    display: flex;
+    margin-block: 2rem;
+
+}
+
+.affiliate_page-container  > div {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 1rem;
+}
+
+.affiliate_page-container > div  > p {
+    text-align: left;
+    width: 80%;
+    color: rgb(98, 98, 98);
+    line-height: 2rem;
+}
+
+.affiliate_page-container > div  > h5 {
+    text-align: left;
+    width: 80%;
+    color: rgb(98, 98, 98);
+}
+.affiliate_page-container > div  > ul {
+    text-align: left;
+    width: 80%;
+    color: rgb(98, 98, 98);
+    line-height: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .affiliate_page-container {
+        flex-direction: column;
+    }
+}
